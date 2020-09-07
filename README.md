@@ -16,3 +16,5 @@ Python DJango 다시 정리하기
 - 아이디어 회의중
 
 - 오늘의 공부는??
+
+django test
