@@ -34,3 +34,35 @@ django test
 ### 2. login
 
 > Django에서 로그인 구현 
+
+
+
+
+## AWS DEPLOY
+
+
+#### 1. ubuntu 서버 접속
+
+> AWS인증키를 받은 후 부터 진행
+
+먼저 ssh를 이용해 aws서버를 접속한다.
+접속한 후에 node, npm 버전을 확인해보니 너무 낮은 버전을 사용하고 있었다.
+
+그래서 STABLE 버전을 이용하기 위하여 npm을 업데이트 해주었다.
+
+CURL 설치
+```
+sudo apt-get install curl
+```
+
+PPA 추가
+```
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+```
+
+Node.js 설치
+```
+sudo apt-get install -y nodejs
+
+```
+
