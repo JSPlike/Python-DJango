@@ -66,3 +66,31 @@ sudo apt-get install -y nodejs
 
 ```
 
+
+## Error 발생
+
+1. sudo apt-get install python3 ~~ 설치시
+
+다음과 같은 에러가 발생했다.
+```
+E: Could not get lock /var/lib/dpkg/lock-frontend - open (11: Resource temporarily unavailable)
+E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), is another process using it?
+```
+ 
+터미널열고 모든 프로세스를 죽입니다.
+1) sudo killall apt apt-get
+
+
+진행중인 프로세스가 없다라는 메시지가 보인다면 다음의 명령어를 따라합니다.
+
+- sudo rm /var/lib/apt/lists/lock
+- sudo rm /var/cache/apt/archives/lock
+- sudo rm /var/lib/dpkg/lock*
+
+- sudo dpkg --configure -a
+- sudo apt update
+
+순서대로 진행하고 다시 설치를 해주면 완료~~!
+
+
+
