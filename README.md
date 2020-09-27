@@ -93,4 +93,4 @@ E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), is an
 순서대로 진행하고 다시 설치를 해주면 완료~~!
 
 
-
+OK
